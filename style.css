@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+body {
+    background:#02DD7C;
+    display: grid;
+    place-items: center;
+    height: 100vh;
+  }
+/*card heading*/
+.card-heading{
+    display: flex;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 1.5em;
+    color: #fff;
+}
+
+  /*card css */
+  .user-list{
+    background:#FF4B03;
+    border-radius:20px;
+    padding: 24px;
+    color:#fff ;
+    font-family: 'Roboto', sans-serif;
+    max-width: 18em;
+    margin:2px;
+    transition: all 1.2s;
+   }
+
+/*content inside card properties*/
+.card-content{
+    line-height: 2em;
+    display: flex;
+    justify-content: center;
+    font-size: 1em;
+    font-weight: 700;
+
+}
+@media (min-width:375px){
+    .user-list:hover{
+        background: #FD076A;  
+        color: white;
+    }
+  }
+  @media (min-width:3840px){
+    .user-list{
+        max-width:100em;
+        font-size: 4em;
+       }
+       .card-heading{
+        font-size:4em;
+        color: #fff;
+    }
+  }
