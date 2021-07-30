@@ -2,12 +2,14 @@
 body {
     background:#02DD7C;
     display: grid;
+    grid-template-columns:1fr;
     place-items: center;
     height: 100vh;
   }
 /*card heading*/
 .card-heading{
-    display: flex;
+    display: grid;
+    grid-template-columns:1fr;
     justify-content: center;
     font-weight: 700;
     font-size: 1.5em;
@@ -21,33 +23,28 @@ body {
     padding: 24px;
     color:#fff ;
     font-family: 'Roboto', sans-serif;
-    max-width: 18em;
-    margin:2px;
+    margin: 2px 5px 2px 0px;
     transition: all 1.2s;
+    
    }
 
 /*content inside card properties*/
 .card-content{
-    line-height: 2em;
-    display: flex;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: 120px 1fr;
+    gap:5px;
+    line-height:1.5em;
     font-size: 1em;
     font-weight: 700;
-
+    align-items: center;
+    
 }
+
+/*user container*/
+
 @media (min-width:375px){
     .user-list:hover{
         background: #FD076A;  
         color: white;
-    }
-  }
-  @media (min-width:3840px){
-    .user-list{
-        max-width:100em;
-        font-size: 4em;
-       }
-       .card-heading{
-        font-size:4em;
-        color: #fff;
     }
   }
