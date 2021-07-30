@@ -7,7 +7,6 @@ document.body.append(heading);
 //TO APPEND DATA TO UI
 function loadUsers(users) {
     let user=users;
-    console.log("load"+user)
     var carbagecheck = document.getElementsByClassName('user-list');
     if (carbagecheck.length > 0) {
         document.querySelector(".user-list").remove();
@@ -140,7 +139,7 @@ async function getUser(){
         loadUsers(users);
        }
     catch(err){
-        console.log(err);
+        alert("CHECK NETWORK");
         const userList = document.createElement("div");
         userList.className = "user-list";
         userList.innerHTML=`CHECK NETWORK`
