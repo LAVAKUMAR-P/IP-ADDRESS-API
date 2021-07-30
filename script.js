@@ -1,7 +1,7 @@
 //heading
 const heading = document.createElement("div");
 heading.className = "card-heading";
-heading.innerHTML="&#127881 HERE YOU CAN SEE YORE DETAILS &#127881"
+heading.innerHTML="&#127881 HERE YOU CAN SEE YOUR DETAILS &#127881"
 document.body.append(heading);
 
 //TO APPEND DATA TO UI
@@ -19,31 +19,109 @@ function loadUsers(users) {
                userContainer.className = "user-container";
                userContainer.innerHTML= `
                <div class="card-content">
-                         REGION : ${user.region}
-                        <br>
-                        CITY : ${user.city}
-                        <br>
-                        NETWORK : ${user.org}
-                        <br>
-                        CONTINENT CODE : ${user.continent_code}
-                        <br>
-                        CONTRY : ${user.country}
-                       <br>
-                        YOUR IP ADDRESS : ${user.ip}
-                       <br>
-                        CONTRY CAPITAL : ${user.country_capital}
-                       <br>
-                        CONTRY AREA : ${user.country_area}
-                       <br>
-                        CONTRY POPULATION : ${user.country_population}
-                       <br>
-                        REGION CODE : ${user.region_code}
-                       <br>
-                        POSTAL : ${user.postal}
-                       <br>
-                        TIMEZONE : ${user.timezone}
-                       <br>
-                        LATITUDE & LAGITUDE : ${user.latitude} AND ${user.longitude}
+                         <div>
+                         REGION
+                         </div>
+
+                         <div>
+                         : ${user.region}
+                         </div>
+
+                         <div>
+                         CITY
+                        </div>
+
+                        <div>
+                         : ${user.city}
+                        </div>
+
+                        <div>
+                        NETWORK
+                        </div>
+
+                        <div>
+                         : ${user.org}
+                         </div>
+
+                        <div>
+                        CONTINENT CODE
+                        </div>
+
+                        <div>
+                         : ${user.continent_code}
+                        </div>
+
+                        <div>
+                        COUNTRY 
+                        </div>
+
+                        <div>
+                        : ${user.country}
+                        </div>
+
+                        <div>
+                        YOUR IP ADDRESS
+                        </div>
+
+                        <div> 
+                        :${user.ip}
+                        </div>
+
+                        <div>
+                        CAPITAL
+                        </div>
+
+                        <div>
+                         : ${user.country_capital}
+                        </div>
+
+                        <div>
+                        COUNTRY AREA
+                        </div>
+
+                        <div>
+                         : ${user.country_area}
+                        </div>
+
+                        <div>
+                        POPULATION
+                        </div>
+
+                        <div>
+                         : ${user.country_population}
+                        </div>
+
+                        <div>
+                        REGION CODE
+                        </div> 
+
+                        <div>
+                        : ${user.region_code}
+                        </div>
+
+                        <div>
+                        POSTAL
+                        </div>
+
+                        <div>
+                         : ${user.postal}
+                        </div>
+
+                        <div>
+                        TIMEZONE
+                        </div>
+
+                        <div>
+                         : ${user.timezone}
+                        </div>
+
+                        <div>
+                        LATITUDE & LONGITUDE
+                        </div>
+
+                        <div>
+                         : ${user.latitude} AND ${user.longitude}
+                         </div>
                 </div>
                       ` 
           userList.append(userContainer);
